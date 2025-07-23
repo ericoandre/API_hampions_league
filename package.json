@@ -1,0 +1,35 @@
+{
+  "name": "api_hampions_league",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "start:dev": "tsx --env-file=.env src/index.ts",
+    "start:watch": "tsx watch --env-file=.env src/index.ts",
+    "dist": "tsup src",
+    "start:dist": "npm run dist && node --env-file=.env dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericoandre/API_hampions_league.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericoandre/API_hampions_league/issues"
+  },
+  "homepage": "https://github.com/ericoandre/API_hampions_league#readme",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^24.0.15",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "morgan": "^1.10.1"
+  }
+}
